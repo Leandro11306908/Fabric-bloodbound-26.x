@@ -14,9 +14,9 @@ public class Bloodbound implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModCreativeModeTabs.registerModCreativeModeTabs();
 
-
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
 	}
 
 	public static Identifier id(String path) {
